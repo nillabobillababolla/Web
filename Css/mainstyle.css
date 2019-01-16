@@ -3,11 +3,16 @@
  
 /* @import rules must precede all others */
  
-* { font-family: "Arial Black", Gadget, sans-serif;}
+* { 
+    font-family: "Arial Black", Gadget, sans-serif;
+}
  
 div * { font-family: "Comic Sans MS", cursive, sans-serif; }
  
-.sitelink { font-family: Georgia, serif; }
+.sitelink { 
+    font-family: Georgia, serif; 
+    font-variant: small-caps;
+}
  
 #tonyquote{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;

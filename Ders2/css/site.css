@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Lobster|Special+Elite&subset=latin-ext');
+
+/* 
+font-family: 'Lobster', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Cinzel Decorative', cursive; 
+*/
+
+div {
+    background-color: aqua;
+    /* color: rgba(57, 181, 74,0.9);
+    color: #39B54A;
+    color: hsl(128, 52%, 47%); */
+    color: violet !important;
+    transition: .6s all ease-in-out;
+    width: 250px;
+    height: 250px;
+    float: left;
+    border: 5px solid #000;
+    border-radius: 0;
+    margin: 10px;
+    font-family: 'Special Elite', cursive;
+}
+
+/* div:nth-child(odd) {
+    border: 2px solid gold;
+}
+
+div:nth-child(even) {
+    border: 2px dashed red;
+} */
+
+div:hover {
+    background-color: coral;
+    color: #fff;
+    border-radius: 50px;
+    transform: scale(1.2);
+    transform: rotateZ(360deg);
+}
+
+span {
+    font-family: 'Lobster', cursive;
+}
+
+/* span::first-letter {
+    font-size: 44px !important;
+} */
+
+.detay {
+    /* height: 100px; */
+    /* border: 2px solid red; */
+    /* margin: .5px 0; */
+    padding: 20px;
+}
+
+.onemli>span {
+    color: gold;
+}
+
+.metin {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.metin span {
+    color: #000;
+    font-family: 'Lobster', cursive;
+    font-size: 44px;
+    font-weight: 500;
+    /* text-decoration-line: line-through; */
+}
+
+.metin:hover {
+    transform: scale(1.02);
+    transform: rotate(0deg);
+}
+
+.indirim {
+    color: rgb(85, 77, 77) !important;
+    font-size: 24px !important;
+    text-decoration-line: line-through;
+    font-family: 'Special Elite', cursive;
+}
+
+.satis {
+    color: rgb(243, 53, 53) !important;
+    font-size: 34px !important;
+    font-weight: 900;
+    font-family: 'Special Elite', cursive;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:link {
+    color: red;
+    font-weight: bold;
+}
+
+a:visited {
+    color: rgb(255, 174, 0);
+    font-style: italic;
+}
+
+a:hover {
+    color: hotpink;
+}

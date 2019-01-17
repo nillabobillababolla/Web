@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS - 4 Geolocation</title>
+    <script>
+        var x ;
+        function konumuBul() {
+           x= document.getElementById("konum");
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function showPosition(position) {
+            console.log(position);
+            x.innerHTML = "Enlem: " + position.coords.latitude + 
+            "<br>Boylam: " + position.coords.longitude; 
+        }
+        //https://insiders.liveshare.vsengsaas.visualstudio.com/join?7B2A632C95FB0565BB528A1825DF54A585EB
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Konumumu Bul" onclick="konumuBul()" />
+    
+    <div id="konum"></div>
+</body>
+
+</html>

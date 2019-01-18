@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,35 @@
     <title>Jquery-1</title>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
 </head>
+
 <body>
-    
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis veniam numquam debitis? Explicabo accusamus
+        excepturi rerum, ea impedit eaque ipsum.
+    </p>
+    <p class="yazi">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea aspernatur eligendi a blanditiis omnis,
+        magnam odio, impedit nihil sapiente et recusandae sunt architecto! Consectetur, est at sint autem illo quidem
+        suscipit explicabo et ex assumenda harum labore, maiores facilis!
+    </p>
+    <p class="yazi ozel">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus a ea, laborum corrupti hic nihil tenetur
+        porro rem aperiam non delectus voluptas totam numquam qui accusantium rerum? Molestiae, dolore, dolor fuga
+        iusto modi amet saepe, distinctio repellendus iure suscipit qui.
+    </p>
+    <p id="onemli">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptate labore iure commodi
+        recusandae a, illo sunt! Obcaecati, reiciendis eum. Non reiciendis, voluptate explicabo iste ad in qui
+        perferendis voluptates.</p>
+    <input type="button" id="btn" value="Goster" />
+    <script>
+        $(".yazi").click(function () {
+            //$(this).hide(300);
+            this.innerText = "Kamil";
+        });
+        $("#btn").click(function () {
+            $("p").toggle(500);
+        });
+    </script>
 </body>
+
 </html>

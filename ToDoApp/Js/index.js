@@ -9,12 +9,15 @@ function newItem() {
 }
 
 document.body.onkeyup = function (e) {
+    var item = document.getElementById("input").value;
     if (e.keyCode == 13) {
-        newItem();
+        if (item.length < 2)
+            alert("Listeye eklemek icin daha uzun bir sey yazin.");
+        else
+            newItem();
     }
 };
 
 function removeItem(e) {
     e.target.parentElement.removeChild(e.target);
 }
-

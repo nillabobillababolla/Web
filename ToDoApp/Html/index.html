@@ -3,66 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../Css/style.css" />
     <title>
         Yapılacaklar Listesi
     </title>
-    <style>
-        * {
-            background-color: thistle;
-        }
-
-        html {
-            font-family: "Avenir Next", Helvetica, sans-serif;
-            text-align: center;
-        }
-
-        body {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        input {
-            padding-top: 30px;
-            width: 500px;
-            height: 100px;
-            font-size: 40px;
-            border: 0;
-        }
-
-        input::placeholder {
-            color: rgba(0, 0, 0, 0.5);
-        }
-
-        input:focus {
-            outline: none;
-        }
-
-        li {
-            text-align: left;
-            font-size: 40px;
-            list-style: none;
-            margin: 0;
-        }
-
-        li:hover {
-            text-decoration: line-through;
-        }
-        div{
-            border: 2px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="../Css/style.css" />
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/bootstrap/dist/css/bootstrap.css"></script>
 </head>
 
 <body>
-    <input id="input" placeholder="Ne eklemek istersin?">
-    <div class="yapılacak">
-        <ul id="list"></ul>
-    </div>
-    <div class="tamamlandi">
-        <ul id="list"></ul>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <input id="input" placeholder="Ne eklemek istersin?">
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <ul id="list"></ul>
+            </div>
+            <div class="col-6">
+                <ul id="list"></ul>
+            </div>
+        </div>
     </div>
 </body>
+</body>
+
+<link rel="stylesheet" href="../Css/style.css">
 <script src="../Js/index.js"></script>
 
 </html>
